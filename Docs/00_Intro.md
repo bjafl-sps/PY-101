@@ -19,4 +19,4 @@ Learning Python is like having a superpower in the digital world! It's used in l
 Get ready for an exciting journey into the world of Python! Remember, it's okay to make mistakes; that's how we learn! So, grab your imagination dust off your logic skills and let's start coding some magic together! 🎉
 
 # Venture forth!
-1. [Core aspects of programming](01_Core-Aspects.md)
+1. [Python features](01_Core-Aspects.md)

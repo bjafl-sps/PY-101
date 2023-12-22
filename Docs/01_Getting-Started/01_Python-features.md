@@ -63,10 +63,10 @@ Python is a language celebrated for its simplicity, versatility, and readability
     - Python uses indentation to define code blocks
     - This enhances readability and enforces a standardized coding style
     - Example:
-    ```
-    # Say you want to define a simpe function foo, that takes in two
-    # numbers (a and b) and returns the sum of these numbers.
-    # In C# it will look something like this:
+    ```csharp
+    // Say you want to define a simpe function foo, that takes in two
+    // numbers (a and b) and returns the sum of these numbers.
+    // In C# it will look something like this:
     
     public int Add(int a, int b)
     {
@@ -74,12 +74,13 @@ Python is a language celebrated for its simplicity, versatility, and readability
         return sum;
     }
 
-    # Here you use curly brackets to define code blocks, 
-    # and semicolons to define linebreaks.
-    #
-    # In Python a normal new line defines the end of a line,
+    // In C# you use curly braces to define code blocks, 
+    // and semicolons to define linebreaks.
+    ```
+    ```python
+    # In Python a normal linebreak defines the end of a line,
     # and tabs defines code blocks.
-    # In Python the same function will look like this:
+    # The same same function will look like this in Python:
     
     def add(a, b):
         sum = a + b
@@ -91,4 +92,4 @@ Python is a language celebrated for its simplicity, versatility, and readability
     - This allows developers to optimize performance-critical parts of code.
 
 ## Wrapping it up
-If some of these points didn't make sense to you, that's okay! You are still new to programming and may not be familiar with the terms used here. To keep it short, Python is a flexible, readable language. It's easier to understand for beginners, but is also very powerful! It has a lot of included and community-driven libraries that provide endless possibilities without the need to build everything from scratch. Even though labeled as good for beginners, Python is valued by skilled programmers for its simplicity and ease, contributing to faster development
+If some of these points didn't make sense to you, that's okay! You are still new to programming and may not be familiar with all the terms used here. To keep it short, Python is a flexible, readable language. It's easier to understand for beginners, but is also very powerful! It has a lot of included and community-driven libraries that provide endless possibilities without the need to build everything from scratch. Even though labeled as good for beginners, Python is valued by skilled programmers for its simplicity and ease, contributing to faster development

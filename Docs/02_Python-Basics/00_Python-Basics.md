@@ -1,8 +1,10 @@
-# Beginner Lesson in Python Syntax and Variables
-## Python Syntax
+# Chapter 2.0: Introduction
+There are many new concepts and words to learn and get familiar with when starting out with programming. This chapter will give a quick overview of some core elements of the python language. We will go deeper into each part later, but having an overview from the beginning will help you to understand and structure what you'll be learning later. Don't worry if you dont't understand everything now! At the moment we are just building a framework, drawing the first lines on a sketch. We will fill in the blanks later, and maybe even add som colors 😎
+
+## 2.0.0: Python Syntax
 Syntax refers to the set of rules determining how code should be written. Just as grammar shapes languages, adhering to Python's syntax ensures code is readable and executable by computers. The syntax in Python is pretty easy and readable, which makes it suitable for beginners. 
 
-### 1. Comments
+### 2.0.0.0: Comments
 Let's start with comments! When writing code, it's useful to provide comments to human readers. This makes it easier to remember what different parts of the code is doing, and helps others reading your code to understand it. Comments are ignored by the computer during execution.
 
 In Python comments start with the character #
@@ -11,7 +13,7 @@ In Python comments start with the character #
 # This is a comment in Python
 ```
 
-### 2. Statements
+### 2.0.0.1: Statements
 A statement is a single instruction that performs a specific action or task within a program. It represents the smallest standalone unit of code that the computer can execute to accomplish a particular operation.
 
 Python statements are executed line-by-line and each statement ends with a newline character.
@@ -23,7 +25,7 @@ a = 5  # Assignment statement
 b = 3 + 2  # Arithmetic expression as a statement
 print(a)  # Function call statement
 ```
-### 3. Operations
+### 2.0.0.3: Operations
 Operations in programming refer to actions or manipulations performed on data. This includes simple arithmetic operations like addition and subtraction, as well as logical operations such as comparisons (equal to, not equal to, greater than, less than). An operation can also manipulate strings or assign values to variables. Operators are the symbols or statements `+`, `-`, `len()`, and so on.
 
 Below are some examples of basic operators in Python
@@ -80,10 +82,6 @@ else:
 print("This is not indented correctly")  # Incorrect indentation will result in an error
 ```
 ## Variables in Python
-### 1. Variable Naming Rules
-- Must start with a letter (a-z, A-Z) or an underscore (_)
-- Can be followed by letters, digits (0-9), or underscores (_)
-- Keywords (reserved words) cannot be used as variable names
 ### 2. Variable Assignment
 Variables are created and assigned values using the = operator.
 
@@ -128,3 +126,38 @@ a = 5
 b = 10
 c = 15
 ```
+
+## Built in functions and keywords
+In Python, built-in functions and keywords play an important role in the language. Built-in functions are pre-defined functions provided by Python that perform specific tasks. Keywords, on the other hand, are reserved words and have special meanings and functionalities in the language.
+
+### 1. Built-in Functions
+Python provides a rich set of built-in functions that you can use in your programs. These functions are readily available and can be used without the need for additional imports or installations. Here are some key points about built-in functions:
+
+Built-in functions perform specific operations on input values and return results.
+They can take zero or more arguments (inputs) and can return a value as an output.
+Examples of built-in functions include print(), len(), input(), type(), str(), int(), float(), etc.
+Here's an example of using a built-in function:
+
+name = "John"
+print("Hello, " + name)  # Output: Hello, John
+
+length = len(name)
+print("Length of name:", length)  # Output: Length of name: 4
+In the above example, we use the built-in functions print() and len(). The print() function displays the given message on the console, and the len() function returns the length of the string.
+
+Keywords
+Keywords in Python are reserved words that have special meanings and functionalities. They cannot be used as variable names or any other identifiers in your code. Some common keywords in Python include if, for, while, def, return, import, class, in, not, and, or, etc.
+
+Here's an example illustrating the use of a keyword:
+
+def greet(name):
+    if name == "Alice":
+        print("Hello, Alice!")
+    else:
+        print("Hello, stranger!")
+
+greet("Alice")  # Output: Hello, Alice!
+greet("Bob")  # Output: Hello, stranger!
+In the above example, the keywords def, if, and else are used. def is used to define a function, if is used for conditional branching, and else is used in conjunction with if for alternative execution paths.
+
+Using built-in functions and keywords provides a powerful way to perform various tasks and control the flow of your programs in Python.

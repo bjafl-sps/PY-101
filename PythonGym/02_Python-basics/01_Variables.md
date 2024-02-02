@@ -4,7 +4,7 @@
 ###  Variable Declaration and Assignment
 
 Write a program that declares three variables name, age, and city. Assign your name, age, and city to these variables, respectively. Print the values of these variables.
-> ### Hint
+> *Hint*
 > - `print(")`
 
 ## Exercise 2.1.2: Variable Reassignment

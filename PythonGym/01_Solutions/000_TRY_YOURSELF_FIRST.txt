@@ -1,0 +1,5 @@
+No peeking at the solutions before you've tried to 
+solve the exercises yourself first! 
+
+If you need to look at one solution to get an example,
+try to solve the next before consulting the solution first 🙃

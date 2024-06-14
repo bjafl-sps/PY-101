@@ -114,7 +114,10 @@ range(2, 10, 2) # Example sequence: 2,4,6,8
 
 # Bonus: Example program using a few basic control structures and functions
 ```python
+# Welcome message
 print("Hello, You!")
+
+# Collect input
 f_name = input("Enter first name: ")
 s_name = input("Enter surname: ")
 age = int(input("Enter your age: "))
@@ -124,19 +127,27 @@ len_sname = len(s_name)
 print(f"Hi Mr. {s_name}!")
 print(f"{age} years old, eh? That's a fine age!")
 
+# Pick shortest name as nickname
 short_name = s_name if len_fname > len_sname else f_name
 print("I'm gonna call you", end=" ")
 if (len_fname != len_sname):
     name = short_name.capitalize()
     print(f"{name}. I'm lazy, and it's your shortest name ...")
+# Handle case when first and last name are of same length
 else:
+    # Message to user
     print("...")
     print("I usually call people by their shortest name, but your names are the same length!")
     print("I'm too lazy to figure out what to call you, so you have to decide ...")
+    
+    # Ask user to input nickname, reprompt if nickname is longer than shortest name
     nickname = input("What should I call you? ")
     n_prompts = 0
     while (len(nickname) > len(short_name)):
         n_prompts += 1
+        # Don't accept more than 4 retries. 
+        # Pick first name as nickname, ask user to accept
+        # Terminate script if user doesn't accept this
         if (n_prompts > 4):
             print("f**k you! I don't have time for this cr*p!")
             response = input(f"I'll just call you {f_name}, write ok to accept: ")
@@ -153,10 +164,14 @@ else:
             nickname = input("Come on! That's longer than your real names! Give me a shorter nickname! ")
     name = nickname.capitalize()
     
+# Print chosen nickname as N-A-M-E, 
+# by iterating all characters in chosen name
 print(f"Okay then Mr. {age}-years old. You'll be known as", end=" ")
 name_chars = ""
 for c in name:
     name_chars += c.upper() + "-"
 print(name_chars.strip("- "))
+
+# Ending message
 print(f"Nice meeting you {name}! Now I need a nap...")
 ```

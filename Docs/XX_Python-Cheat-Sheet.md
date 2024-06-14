@@ -113,6 +113,7 @@ range(2, 10, 2) # Example sequence: 2,4,6,8
 ```
 
 # Bonus: Example program using a few basic control structures and functions
+```python
 print("Hello, You!")
 f_name = input("Enter first name: ")
 s_name = input("Enter surname: ")

@@ -144,7 +144,7 @@ print("Hello, " + name)  # Output: Hello, John
 
 length = len(name)
 print("Length of name:", length)  # Output: Length of name: 4
-```python
+```
 
 In the above example, we use the built-in functions `print()` and `len()`. The `print()` function displays the given message on the console, and the `len()` function returns the length of the string.
 

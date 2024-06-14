@@ -131,7 +131,8 @@ if (len_fname != len_sname):
     print($"{name}. I'm lazy, and it's your shortest name ..."
 else:
     print("...")
-    print("I usually call people by their shortest name, but your names are the same length! I'm too lazy to figure out what to call you, so you have to decide ...")
+    print("I usually call people by their shortest name, but your names are the same length!")
+    print("I'm too lazy to figure out what to call you, so you have to decide ...")
     nickname = input("What should I call you? ")
     n_prompts = 0
     while (len(nickname) > len(short_name)):

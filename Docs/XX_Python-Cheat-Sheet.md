@@ -113,22 +113,21 @@ range(2, 10, 2) # Example sequence: 2,4,6,8
 ```
 
 # Bonus: Example program using a few basic control structures and functions
-```python
-print("Hello, World!")
+print("Hello, You!")
 f_name = input("Enter first name: ")
 s_name = input("Enter surname: ")
 age = int(input("Enter your age: "))
-len_fname = len(name)
+len_fname = len(f_name)
 len_sname = len(s_name)
 
-print($"Hi Mr. {s_name}!")
-print($"{age} years old, eh? That's a fine age!")
+print(f"Hi Mr. {s_name}!")
+print(f"{age} years old, eh? That's a fine age!")
 
-short_name = len_fname > len_sname ? s_name : f_name
+short_name = s_name if len_fname > len_sname else f_name
 print("I'm gonna call you", end=" ")
 if (len_fname != len_sname):
-    name = short_name
-    print($"{name}. I'm lazy, and it's your shortest name ..."
+    name = short_name.capitalize()
+    print(f"{name}. I'm lazy, and it's your shortest name ...")
 else:
     print("...")
     print("I usually call people by their shortest name, but your names are the same length!")
@@ -139,22 +138,24 @@ else:
         n_prompts += 1
         if (n_prompts > 4):
             print("f**k you! I don't have time for this cr*p!")
-            response = input("I'll just call you {f_name}, write ok to accept: ")
+            response = input(f"I'll just call you {f_name}, write ok to accept: ")
             if (response == "ok"):
-                name = f_name
+                nickname = f_name
                 break
-            else
-                print("I give up! Nice not knowing you !!)
+            else:
+                print("I give up! Nice not knowing you !!")
                 exit(1)
         if (n_prompts > 3):
             print("My patience is running out!!")
-            nickname = input("One last chance - what should I call you?")
-        nickname = input(Come on! That's longer than your real names! Give me a shorter nickname!)
+            nickname = input("One last chance - what should I call you? ")
+        else:
+            nickname = input("Come on! That's longer than your real names! Give me a shorter nickname! ")
+    name = nickname.capitalize()
     
-print($"Okay then Mr. {age}-years old. You'll be known as", end" ")
+print(f"Okay then Mr. {age}-years old. You'll be known as", end=" ")
 name_chars = ""
 for c in name:
-    name_chars += c.toUpper() + "-"
-print(name_chars.trim("- "))
-print($"Nice meeting you {name}! Now I need a nap..."
+    name_chars += c.upper() + "-"
+print(name_chars.strip("- "))
+print(f"Nice meeting you {name}! Now I need a nap...")
 ```

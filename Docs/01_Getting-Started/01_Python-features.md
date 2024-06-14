@@ -47,7 +47,7 @@ Python is a language celebrated for its simplicity, versatility, and readability
         - The interpreter infers the type based on the assigned value.
         - See explanation:
     
-    ```
+    ```python
     # Say you want to create the string variable name and set it to Ben
     # In many languages, like C or Java based languages, you would
     # need to declare the variable type, like this:

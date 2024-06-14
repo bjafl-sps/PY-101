@@ -135,21 +135,25 @@ Python provides a rich set of built-in functions that you can use in your progra
 
 Built-in functions perform specific operations on input values and return results.
 They can take zero or more arguments (inputs) and can return a value as an output.
-Examples of built-in functions include print(), len(), input(), type(), str(), int(), float(), etc.
+Examples of built-in functions include `print()`, `len()`, `input()`, type()`, str()`, int()`, `float()`, etc.
 Here's an example of using a built-in function:
 
+```python
 name = "John"
 print("Hello, " + name)  # Output: Hello, John
 
 length = len(name)
 print("Length of name:", length)  # Output: Length of name: 4
-In the above example, we use the built-in functions print() and len(). The print() function displays the given message on the console, and the len() function returns the length of the string.
+```python
+
+In the above example, we use the built-in functions `print()` and `len()`. The `print()` function displays the given message on the console, and the `len()` function returns the length of the string.
 
 Keywords
-Keywords in Python are reserved words that have special meanings and functionalities. They cannot be used as variable names or any other identifiers in your code. Some common keywords in Python include if, for, while, def, return, import, class, in, not, and, or, etc.
+Keywords in Python are reserved words that have special meanings and functionalities. They cannot be used as variable names or any other identifiers in your code. Some common keywords in Python include `if`, `for`, `while`, `def`, `return`, `import`, `class`, `in`, `not`, `and`, `or`, etc.
 
 Here's an example illustrating the use of a keyword:
 
+```python
 def greet(name):
     if name == "Alice":
         print("Hello, Alice!")
@@ -158,6 +162,7 @@ def greet(name):
 
 greet("Alice")  # Output: Hello, Alice!
 greet("Bob")  # Output: Hello, stranger!
-In the above example, the keywords def, if, and else are used. def is used to define a function, if is used for conditional branching, and else is used in conjunction with if for alternative execution paths.
+```
+In the above example, the keywords `def`, `if`, and `else` are used. `def` is used to define a function, `if` is used for conditional branching, and `else` is used in conjunction with `if` for alternative execution paths.
 
 Using built-in functions and keywords provides a powerful way to perform various tasks and control the flow of your programs in Python.
